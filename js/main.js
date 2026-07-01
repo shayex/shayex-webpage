@@ -7,6 +7,15 @@
 (function () {
   "use strict";
 
+  // Always open the page at the top: stop the browser from restoring the
+  // scroll position from a previous visit. If the URL targets a section
+  // (e.g. .../#career), we leave that anchor jump alone.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+    window.addEventListener("load", () => window.scrollTo(0, 0));
+  }
+
   const { SITE, PLAYERS, CAREER, CONTACT } = window.SHAYEX_DATA;
 
   // Placeholder assets used when a real image path isn't provided in data.js
