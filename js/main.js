@@ -91,7 +91,6 @@
     wrap.innerHTML = CAREER.map((c) => {
       const logo = c.logo ? esc(c.logo) : LOGO_PLACEHOLDER;
       const type = c.type === "designer" ? "designer" : "manager";
-      const roleLabel = type === "designer" ? "Designer" : "Manager";
       const desc = c.description && c.description.trim() !== ""
         ? `<p class="timeline-item__desc">${esc(c.description)}</p>`
         : "";
@@ -100,12 +99,10 @@
           <img class="timeline-item__logo" src="${logo}" alt="${esc(c.org)} logo" loading="lazy" />
           <div class="timeline-item__body">
             <div class="timeline-item__top">
-              <span class="timeline-item__org">
-                <span class="badge-role badge-role--${type}">${roleLabel}</span>${esc(c.org)}
-              </span>
+              <h3 class="timeline-item__org">${esc(c.org)}</h3>
               <span class="timeline-item__period">${esc(c.period)}</span>
             </div>
-            <p class="timeline-item__role">${esc(c.role)}</p>
+            <p class="timeline-item__role timeline-item__role--${type}">${esc(c.role)}</p>
             ${desc}
           </div>
         </div>`;

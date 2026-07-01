@@ -439,26 +439,33 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
-.timeline-item__top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; justify-content: space-between; }
-.timeline-item__org { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 700; font-size: 1.05rem; }
-.timeline-item__period { font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
-.timeline-item__role { margin-top: 4px; font-weight: 600; font-size: 0.92rem; }
-.timeline-item__desc { margin-top: 8px; color: var(--text-muted); font-size: 0.92rem; }
-
-/* Role badge (Manager / Designer) */
-.badge-role {
-  display: inline-block;
-  font-size: 0.68rem;
+.timeline-item__top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; justify-content: space-between; }
+.timeline-item__org {
+  margin: 0;
+  font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 3px 9px;
-  border-radius: 6px;
-  margin-right: 8px;
-  vertical-align: middle;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
 }
-.badge-role--manager { color: var(--blue); background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(59, 130, 246, 0.3); }
-.badge-role--designer { color: var(--pink); background: rgba(236, 72, 153, 0.12); border: 1px solid rgba(236, 72, 153, 0.3); }
+.timeline-item__period {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+/* Role reads as a coloured job label; colour also encodes the type */
+.timeline-item__role {
+  margin-top: 7px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.timeline-item__role--manager { color: var(--blue); }
+.timeline-item__role--designer { color: var(--pink); }
+.timeline-item__desc { margin-top: 10px; color: var(--text-muted); font-size: 0.92rem; }
 
 /* =============================== CONTACT =============================== */
 .contact-grid {
