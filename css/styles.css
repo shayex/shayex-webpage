@@ -316,19 +316,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .section--alt { background: var(--bg-alt); }
 
 .section__head { max-width: 640px; margin-bottom: 46px; }
-.section__kicker {
-  display: inline-block;
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: var(--pink);
-  margin-bottom: 12px;
-}
 .section__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
   font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 800;
   font-size: clamp(2rem, 6vw, 3rem);
   letter-spacing: 1px;
+}
+/* Small pink accent bar to the left of every section title */
+.section__title::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 6px;
+  height: 0.85em;
+  border-radius: 3px;
+  background: var(--pink);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.55);
 }
 .section__subtitle { color: var(--text-muted); margin-top: 12px; font-size: 1.05rem; }
 
