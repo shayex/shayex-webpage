@@ -87,7 +87,7 @@ const CAREER = [
     role: "Manager",
     period: "2026",
     description: "",
-    logo: "",                                       // TODO: e.g. "assets/orgs/sovereign.png"
+    logo: "assets/orgs/sovereign.jpg",                                       // TODO: e.g. "assets/orgs/sovereign.png"
   },
   {
     type: "designer",
