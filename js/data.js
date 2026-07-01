@@ -34,28 +34,34 @@ const SITE = {
    ----------------------------------------------------------------------------- */
 const PLAYERS = [
   {
-    name: "PLAYER_ONE",                             // TODO: real gamertag
-    org: "Organisation Name",                       // TODO: current org
-    avatar: "",                                     // TODO: e.g. "assets/players/player-one.jpg"
-    twitter: "https://x.com/",                      // TODO: real Twitter/X link
+    name: "raitex",
+    org: "Detect Esports",                          // handle: @DetectEsportsEU
+    avatar: "",                                     // TODO: e.g. "assets/players/raitex.jpg"
+    twitter: "https://x.com/raitexfv",
   },
   {
-    name: "PLAYER_TWO",
-    org: "Organisation Name",
-    avatar: "",
-    twitter: "https://x.com/",
+    name: "LORENTO",
+    org: "2R Esport",                               // handle: @2R_Esport
+    avatar: "",                                     // TODO: e.g. "assets/players/lorento.jpg"
+    twitter: "https://x.com/LORENTOFN",
   },
   {
-    name: "PLAYER_THREE",
+    name: "wilx",
+    org: "EGY Esports",                             // handle: @EGYEsports
+    avatar: "",                                     // TODO: e.g. "assets/players/wilx.jpg"
+    twitter: "https://x.com/wilxfnr6",
+  },
+  {
+    name: "keytu",
+    org: "EGY Esports",                             // handle: @EGYEsports
+    avatar: "",                                     // TODO: e.g. "assets/players/keytu.jpg"
+    twitter: "https://x.com/7keytu",
+  },
+  {
+    name: "levi",
     org: "Free Agent",
-    avatar: "",
-    twitter: "https://x.com/",
-  },
-  {
-    name: "PLAYER_FOUR",
-    org: "Organisation Name",
-    avatar: "",
-    twitter: "https://x.com/",
+    avatar: "",                                     // TODO: e.g. "assets/players/levi.jpg"
+    twitter: "https://x.com/levifn8",
   },
 ];
 
