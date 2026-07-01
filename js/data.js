@@ -98,6 +98,14 @@ const CAREER = [
     logo: "assets/orgs/evoza.jpg",
   },
   {
+    type: "manager",
+    org: "Odious Esport",
+    role: "Manager",
+    period: "2024",
+    description: "",
+    logo: "assets/orgs/odious.webp",
+  },
+  {
     type: "designer",
     org: "Lyost Esport",
     role: "Art Director",
