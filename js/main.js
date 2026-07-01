@@ -289,15 +289,15 @@
     btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   }
 
-  /* ===================== ANALYTICS (Plausible, optional) =============== */
+  /* ==================== ANALYTICS (GoatCounter, optional) ============= */
   function wireAnalytics() {
-    const domain = ANALYTICS && ANALYTICS.plausibleDomain ? ANALYTICS.plausibleDomain.trim() : "";
-    if (!domain) return; // disabled unless a domain is configured in data.js
+    const code = ANALYTICS && ANALYTICS.goatcounter ? ANALYTICS.goatcounter.trim() : "";
+    if (!code) return; // disabled unless a code is configured in data.js
     const s = document.createElement("script");
-    s.defer = true;
-    s.setAttribute("data-domain", domain);
-    s.src = "https://plausible.io/js/script.js";
-    document.head.appendChild(s);
+    s.async = true;
+    s.setAttribute("data-goatcounter", "https://" + code + ".goatcounter.com/count");
+    s.src = "https://gc.zgo.at/count.js";
+    document.body.appendChild(s);
   }
 
   /* ================================ INIT ================================ */

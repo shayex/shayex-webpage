@@ -169,16 +169,17 @@ const CONTACT = {
 
 
 /* -----------------------------------------------------------------------------
-   5. ANALYTICS (optional, privacy-friendly)
-   Lightweight, cookie-less analytics via Plausible (https://plausible.io).
+   5. ANALYTICS (optional, free & privacy-friendly)
+   Lightweight, cookie-less analytics via GoatCounter — free for personal use
+   (https://www.goatcounter.com).
    HOW TO ENABLE:
-     1. Create a Plausible account and add your site (its domain).
-     2. Put that exact domain below (e.g. "shayex.gg" or "shayex.netlify.app").
+     1. Create a free account. You choose a "code" = your subdomain,
+        e.g. "shayex" gives you the dashboard shayex.goatcounter.com
+     2. Put that code below.
    Leave "" to disable analytics entirely (nothing is loaded).
-   Prefer a free alternative? GoatCounter works too — ask and it can be swapped.
    ----------------------------------------------------------------------------- */
 const ANALYTICS = {
-  plausibleDomain: "",                              // e.g. "shayex.gg" (leave "" to disable)
+  goatcounter: "",                                  // your GoatCounter code, e.g. "shayex" (leave "" to disable)
 };
 
 
