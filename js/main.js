@@ -16,7 +16,7 @@
     window.addEventListener("load", () => window.scrollTo(0, 0));
   }
 
-  const { SITE, PLAYERS, CAREER, CONTACT } = window.SHAYEX_DATA;
+  const { SITE, PLAYERS, CAREER, CONTACT, ANALYTICS } = window.SHAYEX_DATA;
 
   // Placeholder assets used when a real image path isn't provided in data.js
   const AVATAR_PLACEHOLDER = "assets/avatar-placeholder.svg";
@@ -255,6 +255,51 @@
     els.forEach((el) => io.observe(el));
   }
 
+  /* ===================== ACTIVE NAV LINK ON SCROLL ===================== */
+  function wireActiveNav() {
+    const links = {
+      players: document.querySelector('.nav__link[href="#players"]'),
+      career: document.querySelector('.nav__link[href="#career"]'),
+      contact: document.querySelector('.nav__link[href="#contact"]'),
+    };
+    const sections = Object.keys(links)
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    if (!sections.length || !("IntersectionObserver" in window)) return;
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        Object.values(links).forEach((l) => l && l.classList.remove("is-current"));
+        const link = links[entry.target.id];
+        if (link) link.classList.add("is-current");
+      });
+    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+
+    sections.forEach((s) => io.observe(s));
+  }
+
+  /* ============================ BACK TO TOP ============================ */
+  function wireBackToTop() {
+    const btn = document.getElementById("toTop");
+    if (!btn) return;
+    const onScroll = () => btn.classList.toggle("is-visible", window.scrollY > 500);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+
+  /* ===================== ANALYTICS (Plausible, optional) =============== */
+  function wireAnalytics() {
+    const domain = ANALYTICS && ANALYTICS.plausibleDomain ? ANALYTICS.plausibleDomain.trim() : "";
+    if (!domain) return; // disabled unless a domain is configured in data.js
+    const s = document.createElement("script");
+    s.defer = true;
+    s.setAttribute("data-domain", domain);
+    s.src = "https://plausible.io/js/script.js";
+    document.head.appendChild(s);
+  }
+
   /* ================================ INIT ================================ */
   function init() {
     renderHero();
@@ -264,6 +309,9 @@
     renderContact();
     wireHeader();
     wireMobileMenu();
+    wireActiveNav();
+    wireBackToTop();
+    wireAnalytics();
     // Reveal must run after content is injected so it picks up the new .reveal nodes
     wireReveal();
   }

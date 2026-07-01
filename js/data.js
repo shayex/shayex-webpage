@@ -169,6 +169,20 @@ const CONTACT = {
 
 
 /* -----------------------------------------------------------------------------
+   5. ANALYTICS (optional, privacy-friendly)
+   Lightweight, cookie-less analytics via Plausible (https://plausible.io).
+   HOW TO ENABLE:
+     1. Create a Plausible account and add your site (its domain).
+     2. Put that exact domain below (e.g. "shayex.gg" or "shayex.netlify.app").
+   Leave "" to disable analytics entirely (nothing is loaded).
+   Prefer a free alternative? GoatCounter works too — ask and it can be swapped.
+   ----------------------------------------------------------------------------- */
+const ANALYTICS = {
+  plausibleDomain: "",                              // e.g. "shayex.gg" (leave "" to disable)
+};
+
+
+/* -----------------------------------------------------------------------------
    Do not edit below — makes the data available to main.js
    ----------------------------------------------------------------------------- */
-window.SHAYEX_DATA = { SITE, PLAYERS, CAREER, CONTACT };
+window.SHAYEX_DATA = { SITE, PLAYERS, CAREER, CONTACT, ANALYTICS };
