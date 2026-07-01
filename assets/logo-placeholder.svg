@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Organisation logo placeholder">
+  <rect x="4" y="4" width="112" height="112" rx="20" fill="#1a1a2e" stroke="#3a3a55" stroke-width="2"/>
+  <path d="M60 34l22 13v26L60 86 38 73V47z" fill="none" stroke="#4a4a6a" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="60" cy="60" r="8" fill="#4a4a6a"/>
+</svg>

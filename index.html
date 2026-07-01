@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO / SOCIAL SHARING =====
+       TODO: update the description and, once deployed, the og:url / og:image below. -->
+  <title>SHAYEX — Fortnite Player Manager & Graphic Designer</title>
+  <meta name="description" content="SHAYEX — Fortnite player manager and graphic designer. Managing professional players and building esport brand visuals." />
+  <meta name="theme-color" content="#0B0B15" />
+
+  <!-- Open Graph (Twitter/X, Discord link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SHAYEX — Fortnite Player Manager & Graphic Designer" />
+  <meta property="og:description" content="Managing professional Fortnite players and building esport brand visuals." />
+  <!-- TODO: after deploy, set these to your real URL + a 1200x630 preview image -->
+  <meta property="og:url" content="https://your-domain.netlify.app/" />
+  <meta property="og:image" content="assets/logo-placeholder.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts: Orbitron = impactful display/gaming titles, Inter = clean body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================= HEADER / NAV ============================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="brand" aria-label="SHAYEX home">SHAYEX</a>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#players" class="nav__link">Players</a>
+        <a href="#career" class="nav__link">Career</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================ HERO ================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner reveal">
+        <p class="hero__badge" id="heroBadge"><!-- filled from data.js --></p>
+        <h1 class="hero__title" id="heroTitle"><!-- filled from data.js --></h1>
+        <p class="hero__tagline" id="heroTagline"><!-- filled from data.js --></p>
+        <p class="hero__intro" id="heroIntro"><!-- filled from data.js --></p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <a href="#players" class="btn btn--ghost">Meet the players</a>
+        </div>
+      </div>
+      <a href="#players" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- =============================== PLAYERS ============================== -->
+    <section class="section" id="players">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">01 — Roster</span>
+          <h2 class="section__title">Players</h2>
+          <p class="section__subtitle">Professional Fortnite players I currently manage.</p>
+        </div>
+        <!-- Cards are injected here from js/data.js -->
+        <div class="players-grid" id="playersGrid"></div>
+      </div>
+    </section>
+
+    <!-- =============================== CAREER =============================== -->
+    <section class="section section--alt" id="career">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">02 — Journey</span>
+          <h2 class="section__title">Career</h2>
+          <p class="section__subtitle">Where I've worked, as a manager and as a designer.</p>
+        </div>
+
+        <!-- Filter tabs (All / Designer / Manager) -->
+        <div class="tabs reveal" id="careerTabs" role="tablist" aria-label="Career filter">
+          <button class="tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="tab" data-filter="manager" role="tab" aria-selected="false">Manager</button>
+          <button class="tab" data-filter="designer" role="tab" aria-selected="false">Designer</button>
+        </div>
+
+        <!-- Timeline is injected here from js/data.js -->
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- =============================== CONTACT ============================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">03 — Contact</span>
+          <h2 class="section__title">Let's talk</h2>
+          <p class="section__subtitle">Open for management, design work and collaborations.</p>
+        </div>
+        <!-- Contact cards injected here from js/data.js -->
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ FOOTER ================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">SHAYEX</span>
+      <p class="footer__copy">&copy; 2026 SHAYEX &bull; All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Data first, then rendering logic -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
