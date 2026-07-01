@@ -6,7 +6,7 @@
 
   <!-- ===== SEO / SOCIAL SHARING =====
        TODO: update the description and, once deployed, the og:url / og:image below. -->
-  <title>SHAYEX — Fortnite Player Manager & Graphic Designer</title>
+  <title>SHAYEX | Manager & Designer</title>
   <meta name="description" content="SHAYEX — Fortnite player manager and graphic designer. Managing professional players and building esport brand visuals." />
   <meta name="theme-color" content="#08060F" />
 
@@ -14,10 +14,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="SHAYEX — Fortnite Player Manager & Graphic Designer" />
   <meta property="og:description" content="Managing professional Fortnite players and building esport brand visuals." />
-  <!-- TODO: after deploy, set these to your real URL + a 1200x630 preview image -->
+  <!-- TODO: after deploy, set og:url to your real URL -->
   <meta property="og:url" content="https://your-domain.netlify.app/" />
-  <meta property="og:image" content="assets/logo-placeholder.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SHAYEX — Fortnite Player Manager & Graphic Designer" />
+  <meta name="twitter:description" content="Managing professional Fortnite players and building esport brand visuals." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -44,6 +45,8 @@
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="#players" class="nav__link">Collaborations</a>
         <a href="#career" class="nav__link">Career</a>
+        <!-- Portfolio (Behance) — href set from CONTACT.behance in data.js; hidden if empty -->
+        <a href="#" class="nav__link" id="navPortfolio" target="_blank" rel="noopener">Portfolio</a>
         <a href="#contact" class="nav__link nav__link--cta">Contact</a>
       </nav>
     </div>
@@ -66,8 +69,10 @@
             <p class="hero__tagline" id="heroTagline"><!-- filled from data.js --></p>
             <p class="hero__intro" id="heroIntro"><!-- filled from data.js --></p>
             <div class="hero__actions">
-              <a href="#contact" class="btn btn--primary">Get in touch</a>
               <a href="#players" class="btn btn--ghost">Meet the players</a>
+              <!-- Portfolio (Behance) — href set from CONTACT.behance in data.js; hidden if empty -->
+              <a href="#" class="btn btn--ghost" id="heroPortfolio" target="_blank" rel="noopener">Portfolio</a>
+              <a href="#contact" class="btn btn--primary">Contact</a>
             </div>
           </div>
         </div>
@@ -128,6 +133,11 @@
       <p class="footer__copy">&copy; 2026 SHAYEX &bull; All rights reserved</p>
     </div>
   </footer>
+
+  <!-- Back-to-top button (shown after scrolling; wired in main.js) -->
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.41 1.41L13 8.83V19h-2V8.83L6.41 13.41 5 12z"/></svg>
+  </button>
 
   <!-- Data first, then rendering logic -->
   <script src="js/data.js"></script>

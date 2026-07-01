@@ -98,6 +98,14 @@ const CAREER = [
     logo: "assets/orgs/evoza.jpg",
   },
   {
+    type: "manager",
+    org: "Odious Esport",
+    role: "Manager",
+    period: "2024",
+    description: "",
+    logo: "assets/orgs/odious.webp",
+  },
+  {
     type: "designer",
     org: "Lyost Esport",
     role: "Art Director",
@@ -156,6 +164,7 @@ const CONTACT = {
   twitter: "https://x.com/ShayexFx",                // Twitter/X profile URL
   email: "shayex.pro@gmail.com",                    // contact email
   discord: "shayex",                                // Discord username (or "" to hide)
+  behance: "https://www.behance.net/shayexdesign",  // Behance portfolio URL (or "" to hide)
 };
 
 
