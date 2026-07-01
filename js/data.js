@@ -84,7 +84,7 @@ const CAREER = [
   {
     type: "manager",
     org: "Sovereign Esport",
-    role: "Manager",
+    role: "Head of Fortnite",
     period: "2026",
     description: "",
     logo: "assets/orgs/sovereign.jpg",                                       // TODO: e.g. "assets/orgs/sovereign.png"
