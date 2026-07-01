@@ -127,7 +127,7 @@ const CAREER = [
     role: "Graphic Designer",
     period: "2021",
     description: "",
-    logo: "",
+    logo: "assets/orgs/luminox.jpg",
   },
   {
     type: "designer",
