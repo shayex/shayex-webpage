@@ -169,21 +169,6 @@ const CONTACT = {
 
 
 /* -----------------------------------------------------------------------------
-   5. ANALYTICS (optional, free & privacy-friendly)
-   Lightweight, cookie-less analytics via GoatCounter — free for personal use
-   (https://www.goatcounter.com).
-   HOW TO ENABLE:
-     1. Create a free account. You choose a "code" = your subdomain,
-        e.g. "shayex" gives you the dashboard shayex.goatcounter.com
-     2. Put that code below.
-   Leave "" to disable analytics entirely (nothing is loaded).
-   ----------------------------------------------------------------------------- */
-const ANALYTICS = {
-  goatcounter: "",                                  // your GoatCounter code, e.g. "shayex" (leave "" to disable)
-};
-
-
-/* -----------------------------------------------------------------------------
    Do not edit below — makes the data available to main.js
    ----------------------------------------------------------------------------- */
-window.SHAYEX_DATA = { SITE, PLAYERS, CAREER, CONTACT, ANALYTICS };
+window.SHAYEX_DATA = { SITE, PLAYERS, CAREER, CONTACT };

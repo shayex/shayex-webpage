@@ -16,7 +16,7 @@
     window.addEventListener("load", () => window.scrollTo(0, 0));
   }
 
-  const { SITE, PLAYERS, CAREER, CONTACT, ANALYTICS } = window.SHAYEX_DATA;
+  const { SITE, PLAYERS, CAREER, CONTACT } = window.SHAYEX_DATA;
 
   // Placeholder assets used when a real image path isn't provided in data.js
   const AVATAR_PLACEHOLDER = "assets/avatar-placeholder.svg";
@@ -289,17 +289,6 @@
     btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   }
 
-  /* ==================== ANALYTICS (GoatCounter, optional) ============= */
-  function wireAnalytics() {
-    const code = ANALYTICS && ANALYTICS.goatcounter ? ANALYTICS.goatcounter.trim() : "";
-    if (!code) return; // disabled unless a code is configured in data.js
-    const s = document.createElement("script");
-    s.async = true;
-    s.setAttribute("data-goatcounter", "https://" + code + ".goatcounter.com/count");
-    s.src = "https://gc.zgo.at/count.js";
-    document.body.appendChild(s);
-  }
-
   /* ================================ INIT ================================ */
   function init() {
     renderHero();
@@ -311,7 +300,6 @@
     wireMobileMenu();
     wireActiveNav();
     wireBackToTop();
-    wireAnalytics();
     // Reveal must run after content is injected so it picks up the new .reveal nodes
     wireReveal();
   }
