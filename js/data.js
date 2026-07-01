@@ -15,8 +15,8 @@
 const SITE = {
   name: "SHAYEX",                                   // Your brand name (kept uppercase in the design)
   // Small badge line above the big title. Format suggestion: "ROLE • REGION".
-  // TODO: replace [YOUR REGION] with your country/region (e.g. "EU", "France").
-  badge: "PLAYER MANAGER & GRAPHIC DESIGNER • [YOUR REGION]",
+  // Leave "" to hide the badge entirely (currently hidden).
+  badge: "",
   // Big tagline under the title. Adjust the wording to your liking.
   tagline: "Fortnite Player Manager & Graphic Designer",
   // One short sentence pitch shown under the tagline (optional, keep it punchy).

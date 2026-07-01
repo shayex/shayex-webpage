@@ -32,6 +32,9 @@
   /* ================================ HERO ================================= */
   function renderHero() {
     setText("heroBadge", SITE.badge);
+    // Hide the badge pill entirely when no badge text is set
+    const badgeEl = document.getElementById("heroBadge");
+    if (badgeEl) badgeEl.hidden = !SITE.badge || SITE.badge.trim() === "";
     setText("heroTitle", SITE.name);
     setText("heroTagline", SITE.tagline);
     setText("heroIntro", SITE.intro);
