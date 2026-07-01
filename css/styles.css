@@ -116,6 +116,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav { display: flex; align-items: center; gap: 8px; }
+.nav__link[hidden], .btn[hidden] { display: none; }
 .nav__link {
   position: relative;
   padding: 8px 14px;

@@ -156,6 +156,7 @@ const CONTACT = {
   twitter: "https://x.com/ShayexFx",                // Twitter/X profile URL
   email: "shayex.pro@gmail.com",                    // contact email
   discord: "shayex",                                // Discord username (or "" to hide)
+  behance: "https://www.behance.net/shayexdesign",  // Behance portfolio URL (or "" to hide)
 };
 
 
