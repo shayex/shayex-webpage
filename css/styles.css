@@ -152,7 +152,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   min-height: calc(100vh - var(--header-h));
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering; container stays full-width + left-aligned */
   overflow: hidden;
   padding: 40px 0 80px;
 }
