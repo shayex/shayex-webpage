@@ -119,9 +119,9 @@ const CAREER = [
    Set any value to "" to hide that contact card automatically.
    ----------------------------------------------------------------------------- */
 const CONTACT = {
-  twitter: "https://x.com/",                        // TODO: your Twitter/X profile URL
-  email: "your@email.com",                          // TODO: your contact email
-  discord: "yourdiscord",                           // TODO: your Discord username (or "" to hide)
+  twitter: "https://x.com/ShayexFx",                // Twitter/X profile URL
+  email: "shayex.pro@gmail.com",                    // contact email
+  discord: "shayex",                                // Discord username (or "" to hide)
 };
 
 
