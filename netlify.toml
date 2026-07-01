@@ -1,0 +1,13 @@
+# Netlify configuration for the SHAYEX static site.
+# No build step needed — the repo root is published as-is.
+
+[build]
+  publish = "."
+
+# Basic security headers for all responses
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
