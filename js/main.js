@@ -38,6 +38,18 @@
     setText("heroTitle", SITE.name);
     setText("heroTagline", SITE.tagline);
     setText("heroIntro", SITE.intro);
+    // Hero logo (rounded square next to the text). Hide the media column if none.
+    const heroMedia = document.getElementById("heroMedia");
+    const heroLogo = document.getElementById("heroLogo");
+    if (heroMedia && heroLogo) {
+      if (SITE.logo && SITE.logo.trim() !== "") {
+        heroLogo.src = SITE.logo;
+        heroLogo.alt = SITE.name + " logo";
+        heroMedia.hidden = false;
+      } else {
+        heroMedia.hidden = true;
+      }
+    }
     // Brand + footer already contain "SHAYEX" statically; keep them in sync with data.
     document.querySelectorAll(".brand, .footer__brand").forEach((el) => {
       el.textContent = SITE.name;
