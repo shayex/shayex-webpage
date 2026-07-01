@@ -119,7 +119,7 @@ const CAREER = [
     role: "Graphic Designer",
     period: "2021 - 2022",
     description: "",
-    logo: "",
+    logo: "assets/orgs/legion.webp",
   },
   {
     type: "designer",
