@@ -36,31 +36,31 @@ const PLAYERS = [
   {
     name: "raitex",
     org: "Detect Esports",                          // handle: @DetectEsportsEU
-    avatar: "",                                     // TODO: e.g. "assets/players/raitex.jpg"
+    avatar: "assets/players/raitex.jpg",
     twitter: "https://x.com/raitexfv",
   },
   {
     name: "LORENTO",
     org: "2R Esport",                               // handle: @2R_Esport
-    avatar: "",                                     // TODO: e.g. "assets/players/lorento.jpg"
+    avatar: "assets/players/lorento.jpg",
     twitter: "https://x.com/LORENTOFN",
   },
   {
     name: "wilx",
     org: "EGY Esports",                             // handle: @EGYEsports
-    avatar: "",                                     // TODO: e.g. "assets/players/wilx.jpg"
+    avatar: "assets/players/wilx.jpg",
     twitter: "https://x.com/wilxfnr6",
   },
   {
     name: "keytu",
     org: "EGY Esports",                             // handle: @EGYEsports
-    avatar: "",                                     // TODO: e.g. "assets/players/keytu.jpg"
+    avatar: "assets/players/keytu.jpg",
     twitter: "https://x.com/7keytu",
   },
   {
     name: "levi",
     org: "Free Agent",
-    avatar: "",                                     // TODO: e.g. "assets/players/levi.jpg"
+    avatar: "assets/players/levi.jpg",
     twitter: "https://x.com/levifn8",
   },
 ];
