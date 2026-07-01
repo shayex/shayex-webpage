@@ -103,7 +103,7 @@ const CAREER = [
     role: "Art Director",
     period: "2022",
     description: "",
-    logo: "",
+    logo: "assets/orgs/lyost.jpg",
   },
   {
     type: "designer",
