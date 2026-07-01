@@ -95,7 +95,7 @@ const CAREER = [
     role: "Art Director",
     period: "2023 - 2025",
     description: "",
-    logo: "",
+    logo: "assets/orgs/evoza.jpg",
   },
   {
     type: "designer",
@@ -143,7 +143,7 @@ const CAREER = [
     role: "Art Director",
     period: "2021",
     description: "",
-    logo: "",
+    logo: "assets/orgs/evoza.jpg",
   },
 ];
 
