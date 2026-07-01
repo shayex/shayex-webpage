@@ -365,6 +365,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .player-card__org {
   display: inline-block;
