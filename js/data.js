@@ -82,34 +82,66 @@ const PLAYERS = [
    ----------------------------------------------------------------------------- */
 const CAREER = [
   {
-    type: "manager",                                // "designer" or "manager"
-    org: "Organisation Name",                       // TODO
-    role: "Player Manager",                         // TODO
-    period: "2024 - Present",                       // TODO
-    description: "Managing the competitive Fortnite roster.", // optional
-    logo: "",                                       // TODO: e.g. "assets/orgs/org.png"
+    type: "manager",
+    org: "Sovereign Esport",
+    role: "Manager",
+    period: "2026",
+    description: "",
+    logo: "",                                       // TODO: e.g. "assets/orgs/sovereign.png"
   },
   {
     type: "designer",
-    org: "Organisation Name",
-    role: "Graphic Designer",
-    period: "2023 - 2024",
-    description: "Full visual identity, social media assets and matchday graphics.",
-    logo: "",
-  },
-  {
-    type: "designer",
-    org: "Organisation Name",
-    role: "Freelance Designer",
-    period: "2022 - 2023",
+    org: "EvozA Esport",
+    role: "Art Director",
+    period: "2023 - 2025",
     description: "",
     logo: "",
   },
   {
-    type: "manager",
-    org: "Organisation Name",
-    role: "Assistant Manager",
-    period: "2022 - 2023",
+    type: "designer",
+    org: "Lyost Esport",
+    role: "Art Director",
+    period: "2022",
+    description: "",
+    logo: "",
+  },
+  {
+    type: "designer",
+    org: "VCTRY Esport",
+    role: "Graphic Designer",
+    period: "2021 - 2022",
+    description: "",
+    logo: "",
+  },
+  {
+    type: "designer",
+    org: "Legion",
+    role: "Graphic Designer",
+    period: "2021 - 2022",
+    description: "",
+    logo: "",
+  },
+  {
+    type: "designer",
+    org: "Luminox Planet",
+    role: "Graphic Designer",
+    period: "2021",
+    description: "",
+    logo: "",
+  },
+  {
+    type: "designer",
+    org: "TT9 Esports",
+    role: "Graphic Designer",
+    period: "2021",
+    description: "",
+    logo: "",
+  },
+  {
+    type: "designer",
+    org: "EvozA Esport",
+    role: "Art Director",
+    period: "2021",
     description: "",
     logo: "",
   },
