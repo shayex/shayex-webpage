@@ -77,18 +77,19 @@
     grid.innerHTML = PLAYERS.map((p) => {
       const avatar = p.avatar ? esc(p.avatar) : AVATAR_PLACEHOLDER;
       const hasLink = p.twitter && p.twitter.trim() !== "" && p.twitter.trim() !== "https://x.com/";
-      const link = hasLink
-        ? `<a class="player-card__link" href="${esc(p.twitter)}" target="_blank" rel="noopener">
-             ${ICON.twitter}<span>Follow</span>
-           </a>`
+      // "Follow" is a span (not a nested <a>) so the whole card can be the link.
+      const follow = hasLink
+        ? `<span class="player-card__link">${ICON.twitter}<span>Follow</span></span>`
         : "";
-      return `
-        <article class="player-card reveal">
+      const inner = `
           <img class="player-card__avatar" src="${avatar}" alt="${esc(p.name)} avatar" loading="lazy" />
           <h3 class="player-card__name">${esc(p.name)}</h3>
           <span class="player-card__org">${esc(p.org)}</span>
-          <div>${link}</div>
-        </article>`;
+          <div>${follow}</div>`;
+      // Whole card is clickable when a real Twitter/X link exists.
+      return hasLink
+        ? `<a class="player-card reveal" href="${esc(p.twitter)}" target="_blank" rel="noopener" aria-label="${esc(p.name)} on Twitter/X">${inner}</a>`
+        : `<article class="player-card reveal">${inner}</article>`;
     }).join("");
   }
 

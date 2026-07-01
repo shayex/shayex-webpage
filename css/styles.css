@@ -320,6 +320,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 22px;
 }
 .player-card {
+  display: block;                 /* works whether the card is <article> or <a> */
   position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -327,6 +328,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 22px;
   text-align: center;
   overflow: hidden;
+  color: inherit;
+  cursor: pointer;
   transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 /* Animated gradient border-glow on hover */
@@ -381,7 +384,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--blue);
   transition: gap 0.25s var(--ease);
 }
-.player-card__link:hover { gap: 10px; }
+.player-card:hover .player-card__link { gap: 10px; }
 .player-card__link svg { width: 15px; height: 15px; fill: currentColor; }
 
 /* =============================== TIMELINE =============================== */
