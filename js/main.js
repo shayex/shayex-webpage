@@ -45,6 +45,23 @@
     if (el) el.textContent = value || "";
   }
 
+  /* ============================= BRAND / LOGO =========================== */
+  function renderBrand() {
+    const section = document.getElementById("brand");
+    const img = document.getElementById("brandLogo");
+    if (!section || !img) return;
+
+    // Hide the whole block if no logo is provided in data.js
+    if (!SITE.logo || SITE.logo.trim() === "") {
+      section.hidden = true;
+      return;
+    }
+    img.src = SITE.logo;
+    img.alt = SITE.name + " logo";
+    setText("brandCaption", SITE.logoCaption);
+    section.hidden = false;
+  }
+
   /* =============================== PLAYERS =============================== */
   function renderPlayers() {
     const grid = document.getElementById("playersGrid");
@@ -221,6 +238,7 @@
   function init() {
     renderHero();
     renderPlayers();
+    renderBrand();
     renderCareer();
     renderContact();
     wireHeader();

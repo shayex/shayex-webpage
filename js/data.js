@@ -21,6 +21,9 @@ const SITE = {
   tagline: "Fortnite Player Manager & Graphic Designer",
   // One short sentence pitch shown under the tagline (optional, keep it punchy).
   intro: "I manage professional Fortnite players and craft the visuals that make esport brands stand out.",
+  // Brand logo shown in the middle of the page. Leave "" to hide that section.
+  logo: "assets/shayex-logo.jpg",                   // TODO: replace with your logo file if it changes
+  logoCaption: "Manager × Designer",                // small line under the logo (or "" to hide)
 };
 
 
