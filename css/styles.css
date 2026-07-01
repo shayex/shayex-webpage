@@ -94,7 +94,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: rgba(11, 11, 21, 0.9);
   border-bottom-color: var(--border);
 }
-.header__inner { display: flex; align-items: center; justify-content: space-between; }
+/* Full-width header: logo hard left, nav hard right (override .container) */
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: none;
+  width: 100%;
+  padding: 0 clamp(20px, 3vw, 36px);
+}
 
 .brand {
   font-family: "Space Grotesk", "Inter", sans-serif;
