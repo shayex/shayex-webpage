@@ -111,7 +111,7 @@ const CAREER = [
     role: "Graphic Designer",
     period: "2021 - 2022",
     description: "",
-    logo: "",
+    logo: "assets/orgs/vctry.jpg",
   },
   {
     type: "designer",
