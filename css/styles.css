@@ -97,10 +97,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .header__inner { display: flex; align-items: center; justify-content: space-between; }
 
 .brand {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 700;
   font-size: 1.35rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -186,11 +186,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 26px;
 }
 .hero__title {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 700;
   font-size: clamp(3.2rem, 13vw, 8rem);
   line-height: 0.95;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   background: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
@@ -261,14 +261,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .section__head { max-width: 640px; margin-bottom: 46px; }
 .section__kicker {
   display: inline-block;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: 0.75rem;
   letter-spacing: 3px;
   color: var(--pink);
   margin-bottom: 12px;
 }
 .section__title {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 800;
   font-size: clamp(2rem, 6vw, 3rem);
   letter-spacing: 1px;
@@ -320,7 +320,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .player-card:hover .player-card__avatar { border-color: var(--blue); box-shadow: 0 0 22px rgba(59, 130, 246, 0.5); }
 
 .player-card__name {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: 1px;
@@ -402,7 +402,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 .timeline-item__top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; justify-content: space-between; }
-.timeline-item__org { font-family: "Orbitron", sans-serif; font-weight: 700; font-size: 1.05rem; }
+.timeline-item__org { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 700; font-size: 1.05rem; }
 .timeline-item__period { font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
 .timeline-item__role { margin-top: 4px; font-weight: 600; font-size: 0.92rem; }
 .timeline-item__desc { margin-top: 8px; color: var(--text-muted); font-size: 0.92rem; }
@@ -453,7 +453,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ================================ FOOTER =============================== */
 .footer { border-top: 1px solid var(--border); padding: 34px 0; background: var(--bg-alt); }
 .footer__inner { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
-.footer__brand { font-family: "Orbitron", sans-serif; font-weight: 900; letter-spacing: 2px; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.footer__brand { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 700; letter-spacing: 1px; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .footer__copy { color: var(--text-muted); font-size: 0.9rem; }
 
 /* ========================= SCROLL REVEAL ANIMATION ===================== */

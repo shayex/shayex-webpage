@@ -66,7 +66,7 @@ Works identically on **Vercel** (framework preset: *Other*, no build command).
 ## 🎨 Design
 
 - **Palette:** "Electric Violet" — electric blue `#3B82F6`, violet `#8B5CF6` and pink `#EC4899` on a near-black violet `#08060F` background.
-- **Fonts:** Orbitron (display/titles) + Inter (body), loaded from Google Fonts.
+- **Fonts:** Space Grotesk (display/titles) + Inter (body), loaded from Google Fonts.
 - To retheme, change the CSS variables at the top of [`css/styles.css`](css/styles.css) — everything updates from there.
 
 ---
